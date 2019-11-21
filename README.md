@@ -1,4 +1,4 @@
-# AWS AutoScaling PHP App Demo
+# AWS EC2 AutoScaling PHP App Demo
 
 The purpose of this demo is show how to use some AWS services to create a scalable architecture. We are going to create a web app architecture and do a load test.
 
