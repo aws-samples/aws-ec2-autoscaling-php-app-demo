@@ -194,7 +194,7 @@ Resources:
                 pip install virtualenv
                 virtualenv locustenv
                 source locustenv/bin/activate
-                pip install locust
+                pip install locustio==0.13.5
                 cat >locustfile.py <<EOL
                 from locust import HttpLocust, TaskSet
                 def index(l):
