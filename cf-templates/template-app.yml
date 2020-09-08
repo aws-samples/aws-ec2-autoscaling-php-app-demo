@@ -202,10 +202,10 @@ Resources:
             sudo yum update -y
             sudo yum install php php-memcache git -y
             # Clone repository
-            git clone https://github.com/gabrielmartinigit/aws-autoscaling-php-demo.git
-            sudo mv aws-autoscaling-php-demo/src/app/* /var/www/html/
-            sudo mv aws-autoscaling-php-demo/src/image/ /var/www/html/
-            sudo mv aws-autoscaling-php-demo/src/css/ /var/www/html/
+            git clone https://github.com/aws-samples/aws-ec2-autoscaling-php-app-demo.git
+            sudo mv aws-ec2-autoscaling-php-app-demo/src/app/* /var/www/html/
+            sudo mv aws-ec2-autoscaling-php-app-demo/src/image/ /var/www/html/
+            sudo mv aws-ec2-autoscaling-php-app-demo/src/css/ /var/www/html/
             # Update config files
             sed -i 's/session.save_handler "files"/session.save_handler "memcache"/g' /etc/httpd/conf.d/php.conf
             sed -i 's%session.save_path    "/var/lib/php/session"%session.save_path "${MemCluster.ConfigurationEndpoint.Address}:11211"%g' /etc/httpd/conf.d/php.conf
